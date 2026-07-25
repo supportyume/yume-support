@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUME - Support & FAQ</title>
+    <style>
+        :root {
+            --primary-color: #14D2A4; /* YUME Teal */
+            --secondary-color: #102A43;
+            --background-color: #F4F3F7;
+            --text-main: #1A1A1A;
+            --text-secondary: #757575;
+            --accent-pink: #F1AA9B;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0EAD8E 0%, #14D2A4 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #EEE;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-box {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 24px;
+        }
+
+        .contact-box h2 {
+            color: var(--primary-color);
+            justify-content: center;
+        }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 20px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .email-link:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2.2rem; }
+            .card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>YUME</h1>
+        <p>Connecting Dreamers Nearby</p>
+    </div>
+
+    <div class="container">
+        <!-- Getting Started -->
+        <div class="card">
+            <h2>Getting Started</h2>
+            <div class="faq-item">
+                <h3>What is Guest Mode?</h3>
+                <p>Guest Mode allows you to explore YUME immediately without creating an account. You can chat and discover people nearby for up to 14 days.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I save my data?</h3>
+                <p>To keep your friends and chat history forever, you must "Upgrade" your guest account to a full account using your Email or Google Sign-In before the 14-day trial ends.</p>
+            </div>
+        </div>
+
+        <!-- Social & Discovery -->
+        <div class="card">
+            <h2>Social & Discovery</h2>
+            <div class="faq-item">
+                <h3>How does the "Distance" feature work?</h3>
+                <p>YUME uses your GPS location to calculate how far away other users are. This is updated in real-time while you use the app.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I hide my location?</h3>
+                <p>Yes. Go to Settings > Privacy and toggle "Show my location" off. You will still be able to use the app, but other users won't see your distance or city.</p>
+            </div>
+        </div>
+
+        <!-- Safety & Reporting -->
+        <div class="card">
+            <h2>Safety & Privacy</h2>
+            <div class="faq-item">
+                <h3>How do I report someone?</h3>
+                <p>In any chat room, tap the three dots (menu) at the top right and select "Report". Our moderation team reviews every report within 24 hours.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What happens when I block a user?</h3>
+                <p>Blocking is immediate. The user will be removed from your friends list, they cannot message you, and they will no longer appear in your Discovery feed.</p>
+            </div>
+        </div>
+
+        <!-- Account -->
+        <div class="card">
+            <h2>Account Management</h2>
+            <div class="faq-item">
+                <h3>How do I delete my account?</h3>
+                <p>Go to Settings > Danger Zone and select "Delete Account". For security, your account will be scheduled for deletion and permanently removed after 30 days. This action cannot be undone.</p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-box">
+            <h2>Need More Help?</h2>
+            <p>Our support team is happy to assist you with any issues or feedback.</p>
+            <a href="mailto:supportyume232@gmail.com" class="email-link">Email Support</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 YUME Chat. All rights reserved.<br>
+            Designed for secure and meaningful connections.
+        </div>
+    </div>
+
+</body>
+</html>
