@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YUME - Support & FAQ</title>
+    <title>YUME - Support, FAQ & Community Guidelines</title>
     <style>
         :root {
-            --primary-color: #14D2A4; /* YUME Teal */
+            --primary-color: #0EAD8E; /* YUME Teal - Matches App Brand */
+            --primary-light: #14D2A4;
             --secondary-color: #102A43;
             --background-color: #F4F3F7;
             --text-main: #1A1A1A;
             --text-secondary: #757575;
             --accent-pink: #F1AA9B;
+            --danger-color: #EB5757;
         }
 
         * {
@@ -28,110 +30,144 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #0EAD8E 0%, #14D2A4 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
             clip-path: ellipse(150% 100% at 50% 0%);
         }
 
         .header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 900;
-            letter-spacing: -1px;
+            letter-spacing: -1.5px;
             margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.25rem;
+            opacity: 0.95;
             font-weight: 500;
         }
 
         .container {
-            max-width: 800px;
-            margin: -40px auto 60px;
+            max-width: 900px;
+            margin: -50px auto 60px;
             padding: 0 20px;
         }
 
         .card {
             background: white;
-            border-radius: 24px;
+            border-radius: 28px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
             margin-bottom: 30px;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .warning-card {
+            border-left: 6px solid var(--danger-color);
         }
 
         h2 {
             color: var(--primary-color);
             margin-bottom: 25px;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 800;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            letter-spacing: -0.5px;
         }
 
         .faq-item {
             margin-bottom: 25px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #EEE;
+            border-bottom: 1px solid #F0F0F0;
         }
 
         .faq-item:last-child {
             border-bottom: none;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .faq-item h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
             color: var(--secondary-color);
+            font-weight: 700;
         }
 
         .faq-item p {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 1rem;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-weight: 600;
         }
 
         .contact-box {
             background: var(--secondary-color);
             color: white;
             text-align: center;
-            padding: 40px;
-            border-radius: 24px;
+            padding: 50px 30px;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px rgba(16, 42, 67, 0.2);
         }
 
         .contact-box h2 {
-            color: var(--primary-color);
+            color: var(--primary-light);
             justify-content: center;
         }
 
         .email-link {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 25px;
             background: var(--primary-color);
             color: white;
             text-decoration: none;
-            padding: 15px 40px;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: transform 0.2s;
+            padding: 18px 50px;
+            border-radius: 35px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(14, 173, 142, 0.3);
         }
 
         .email-link:hover {
-            transform: scale(1.05);
+            transform: translateY(-3px);
+            background: var(--primary-light);
+            box-shadow: 0 15px 25px rgba(14, 173, 142, 0.4);
         }
 
         .footer {
             text-align: center;
-            padding: 40px;
+            padding: 50px 20px;
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
         }
 
         @media (max-width: 600px) {
-            .header h1 { font-size: 2.2rem; }
-            .card { padding: 25px; }
+            .header { padding: 60px 20px; }
+            .header h1 { font-size: 2.5rem; }
+            .card { padding: 30px 20px; }
+            h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -143,16 +179,37 @@
     </div>
 
     <div class="container">
+        
+        <!-- Guideline 1.2: Community Standards & Zero Tolerance -->
+        <div class="card warning-card">
+            <h2>Community Guidelines</h2>
+            <div class="faq-item">
+                <h3>Our Zero Tolerance Policy</h3>
+                <p>YUME is a safe space for meaningful connections. We have <span class="highlight-text">zero tolerance</span> for objectionable content or abusive behavior. Users who violate our community standards will be <span style="color: var(--danger-color); font-weight: bold;">permanently banned</span> without warning.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Prohibited Content</h3>
+                <p>The following are strictly prohibited on YUME:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; color: var(--text-secondary);">
+                    <li>Nudity or sexually explicit content</li>
+                    <li>Hate speech or discrimination of any kind</li>
+                    <li>Harassment, bullying, or threats against other users</li>
+                    <li>Violence, gore, or promotion of illegal acts</li>
+                    <li>Commercial spam or fraudulent activities</li>
+                </ul>
+            </div>
+        </div>
+
         <!-- Getting Started -->
         <div class="card">
             <h2>Getting Started</h2>
             <div class="faq-item">
                 <h3>What is Guest Mode?</h3>
-                <p>Guest Mode allows you to explore YUME immediately without creating an account. You can chat and discover people nearby for up to 14 days.</p>
+                <p>Guest Mode allows you to explore YUME immediately without creating an account. You can chat and discover people nearby for a <span class="highlight-text">14-day trial period</span>.</p>
             </div>
             <div class="faq-item">
                 <h3>How do I save my data?</h3>
-                <p>To keep your friends and chat history forever, you must "Upgrade" your guest account to a full account using your Email or Google Sign-In before the 14-day trial ends.</p>
+                <p>To keep your friends and chat history forever, you must "Upgrade" your guest account to a full account using your <span class="highlight-text">Email</span> or <span class="highlight-text">Google Sign-In</span> before the 14-day trial ends. Look for the upgrade banner on your Home or Settings screen.</p>
             </div>
         </div>
 
@@ -161,24 +218,28 @@
             <h2>Social & Discovery</h2>
             <div class="faq-item">
                 <h3>How does the "Distance" feature work?</h3>
-                <p>YUME uses your GPS location to calculate how far away other users are. This is updated in real-time while you use the app.</p>
+                <p>YUME uses your device's location to calculate the approximate distance between you and other dreamers. Your exact coordinates are never shared with others—only the distance and your general city.</p>
             </div>
             <div class="faq-item">
                 <h3>Can I hide my location?</h3>
-                <p>Yes. Go to Settings > Privacy and toggle "Show my location" off. You will still be able to use the app, but other users won't see your distance or city.</p>
+                <p>Yes. Go to <span class="highlight-text">Settings > Privacy</span> and toggle "Show my location" off. You can also hide your Online Status in the same menu.</p>
             </div>
         </div>
 
         <!-- Safety & Reporting -->
         <div class="card">
-            <h2>Safety & Privacy</h2>
+            <h2>Reporting & Safety Tools</h2>
             <div class="faq-item">
-                <h3>How do I report someone?</h3>
-                <p>In any chat room, tap the three dots (menu) at the top right and select "Report". Our moderation team reviews every report within 24 hours.</p>
+                <h3>How do I report a Post?</h3>
+                <p>If you see offensive content on the Timeline, tap the <span class="highlight-text">three-dot (...) menu</span> at the top right of the post card and select <span class="highlight-text">"Report Post"</span>. Select the reason for your report and submit.</p>
             </div>
             <div class="faq-item">
-                <h3>What happens when I block a user?</h3>
-                <p>Blocking is immediate. The user will be removed from your friends list, they cannot message you, and they will no longer appear in your Discovery feed.</p>
+                <h3>How do I report or block a User?</h3>
+                <p>In a Chat or on a User's Profile, tap the <span class="highlight-text">three-dot (...) menu</span> and select "Report" or "Block". Blocking a user will immediately remove them from your friends list and hide them from your discovery feed.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What happens after I report something?</h3>
+                <p>Our moderation team reviews reports <span class="highlight-text">24/7</span>. Objectionable content is removed within 24 hours, and accounts found in violation of our guidelines are suspended or banned.</p>
             </div>
         </div>
 
@@ -187,15 +248,15 @@
             <h2>Account Management</h2>
             <div class="faq-item">
                 <h3>How do I delete my account?</h3>
-                <p>Go to Settings > Danger Zone and select "Delete Account". For security, your account will be scheduled for deletion and permanently removed after 30 days. This action cannot be undone.</p>
+                <p>Go to <span class="highlight-text">Settings > Danger Zone</span> and select "Delete Account". For your protection, your account will be scheduled for deletion and <span class="highlight-text">permanently removed after 30 days</span>. You can cancel this request by logging back in within the 30-day window.</p>
             </div>
         </div>
 
         <!-- Contact -->
         <div class="contact-box">
             <h2>Need More Help?</h2>
-            <p>Our support team is happy to assist you with any issues or feedback.</p>
-            <a href="mailto:supportyume232@gmail.com" class="email-link">Email Support</a>
+            <p>Our support team is happy to assist you with any issues, technical problems, or feedback.</p>
+            <a href="mailto:supportyume232@gmail.com" class="email-link">Email supportyume232@gmail.com</a>
         </div>
 
         <div class="footer">
