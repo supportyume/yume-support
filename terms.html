@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUME - Terms of Service</title>
+    <style>
+        :root {
+            --primary-color: #0EAD8E;
+            --primary-light: #14D2A4;
+            --secondary-color: #102A43;
+            --background-color: #F4F3F7;
+            --text-main: #1A1A1A;
+            --text-secondary: #757575;
+            --accent-pink: #F1AA9B;
+            --danger-color: #EB5757;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-weight: 900;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -50px auto 60px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 28px;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+        }
+
+        .warning-card {
+            border-left: 6px solid var(--danger-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #EEE;
+        }
+
+        .footer p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .footer-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2.5rem; }
+            .card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">YUME</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Terms of Service</h1>
+        <p>Last Updated: July 2026</p>
+    </div>
+
+    <div class="container">
+        <!-- Zero Tolerance Policy - HIGH VISIBILITY FOR APPLE -->
+        <div class="card warning-card">
+            <h2 style="color: var(--danger-color);">Zero Tolerance Policy</h2>
+            <p>YUME Chat maintains a <span style="font-weight: bold;">Zero Tolerance Policy</span> regarding objectionable content or abusive behavior. This is necessary to maintain a safe and welcoming environment for all users.</p>
+            <p>Users who violate these terms will be <span style="color: var(--danger-color); font-weight: bold;">permanently banned</span> from the service immediately and without prior warning.</p>
+        </div>
+
+        <div class="card">
+            <h2>1. User Responsibilities</h2>
+            <p>By using YUME Chat, you agree to:</p>
+            <ul>
+                <li>Be at least 18 years of age.</li>
+                <li>Provide accurate profile information.</li>
+                <li>Interact with other users respectfully and lawfully.</li>
+                <li>Maintain the security of your authentication credentials.</li>
+            </ul>
+
+            <h2>2. Community Guidelines</h2>
+            <p>The following activities and content types are strictly prohibited:</p>
+            <ul>
+                <li><strong>Objectionable Content:</strong> Nudity, sexually explicit content, or excessive violence.</li>
+                <li><strong>Abusive Behavior:</strong> Harassment, bullying, stalking, or making threats.</li>
+                <li><strong>Discrimination:</strong> Hate speech or discrimination based on race, religion, sexual orientation, or gender identity.</li>
+                <li><strong>Fraud:</strong> Impersonation of others or engaging in fraudulent financial activities.</li>
+                <li><strong>Spam:</strong> Sending unsolicited commercial messages or links.</li>
+            </ul>
+
+            <h2>3. Content Moderation & Reporting</h2>
+            <p>YUME uses a hybrid human-and-automated moderation system to keep the community safe:</p>
+            <ul>
+                <li><strong>Reporting:</strong> Users can report any objectionable content or abusive users via the three-dot (...) menu found in the Timeline and Profile screens.</li>
+                <li><strong>Automated Hiding:</strong> Any post that receives <strong>2 unique community reports</strong> is automatically hidden from the public feed pending further review.</li>
+                <li><strong>User Suspension:</strong> Users receiving multiple valid reports will be automatically suspended by our moderation engine.</li>
+            </ul>
+
+            <h2>4. Account Management</h2>
+            <ul>
+                <li><strong>Deletion:</strong> Users may delete their account at any time via Settings.</li>
+                <li><strong>Persistence:</strong> Following a deletion request, data is permanently removed after a 30-day grace period.</li>
+            </ul>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>YUME Chat is provided "as is." We are not liable for any damages arising from your use of the service or interactions with other users. While we strive to moderate content aggressively, you use the service at your own risk.</p>
+
+            <h2>6. Contact</h2>
+            <p>For legal inquiries or support, please email <span style="color: var(--primary-color); font-weight: bold;">supportyume232@gmail.com</span>.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 YUME Chat. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
