@@ -29,57 +29,10 @@
             line-height: 1.6;
         }
 
-        /* Navigation */
-        .navbar {
-            background: white;
-            padding: 15px 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-        }
-
-        .navbar-container {
-            max-width: 1200px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar-brand {
-            font-weight: 900;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-secondary);
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
         .header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
             color: white;
-            padding: 100px 20px 80px;
+            padding: 80px 20px;
             text-align: center;
             clip-path: ellipse(150% 100% at 50% 0%);
         }
@@ -191,40 +144,27 @@
         }
 
         .footer {
-            background: white;
-            padding: 60px 20px;
             text-align: center;
-            border-top: 1px solid #EEE;
-        }
-
-        .footer p {
+            padding: 50px 20px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
 
         .footer-links {
+            margin-top: 15px;
             display: flex;
             justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .footer-links a {
             color: var(--primary-color);
             text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            transition: opacity 0.3s;
-        }
-
-        .footer-links a:hover {
-            opacity: 0.7;
+            font-weight: 600;
         }
 
         @media (max-width: 600px) {
-            .navbar-container { flex-direction: column; gap: 15px; }
-            .header { padding: 80px 20px 60px; }
+            .header { padding: 60px 20px; }
             .header h1 { font-size: 2.5rem; }
             .card { padding: 30px 20px; }
             h2 { font-size: 1.4rem; }
@@ -232,19 +172,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-brand">YUME</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="#support">Contact Support</a>
-            </div>
-        </div>
-    </nav>
 
     <div class="header">
         <h1>YUME</h1>
@@ -255,7 +182,7 @@
 
         <!-- Guideline 1.2: Community Standards & Zero Tolerance -->
         <div class="card warning-card">
-            <h2 id="guidelines">Community Guidelines</h2>
+            <h2>Community Guidelines</h2>
             <div class="faq-item">
                 <h3>Our Zero Tolerance Policy</h3>
                 <p>YUME is a safe space for meaningful connections. We have <span class="highlight-text">zero tolerance</span> for objectionable content or abusive behavior. Users who violate our community standards will be <span style="color: var(--danger-color); font-weight: bold;">permanently banned</span> without warning.</p>
@@ -288,7 +215,7 @@
             </div>
         </div>
 
-        <!-- Safety & Reporting -->
+        <!-- Safety & Reporting - EXTENDED FOR AUDIT -->
         <div class="card">
             <h2>Reporting & Safety Tools</h2>
             <div class="faq-item">
@@ -315,22 +242,21 @@
         </div>
 
         <!-- Contact -->
-        <div id="support" class="contact-box">
+        <div class="contact-box">
             <h2>Need More Help?</h2>
             <p>Our support team is happy to assist you with any issues, technical problems, or feedback.</p>
             <a href="mailto:supportyume232@gmail.com" class="email-link">Email supportyume232@gmail.com</a>
         </div>
-    </div>
 
-    <!-- Professional Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 YUME Chat. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="#support">Support</a>
+        <div class="footer">
+            &copy; 2026 YUME Chat. All rights reserved.<br>
+            Designed for secure and meaningful connections.
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-of-service">Terms of Service</a>
+            </div>
         </div>
-    </footer>
+    </div>
 
 </body>
 </html>
